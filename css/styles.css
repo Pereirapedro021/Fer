@@ -1,0 +1,271 @@
+* {
+    font-family: "Josefin Sans";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #000;
+    color: #777;
+  }
+  body a {
+    color: #777;
+    text-decoration: none;
+    transition: 0.4s;
+  }
+  body ul {
+    list-style: none;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    padding: 1.5rem 0;
+    margin: 0 auto;
+  }
+  @media (max-width: 425px) {
+    .header {
+      padding: 1.1rem;
+    }
+  }
+  .header-brand {
+    color: #FFF;
+    font-size: 3rem;
+  }
+  .header-navbar ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @media (max-width: 425px) {
+    .header-navbar ul {
+      display: none;
+    }
+  }
+  .header-navbar ul li {
+    margin: 0 1rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+  .header-navbar ul li .active {
+    color: #20C997;
+  }
+  .header-navbar ul li a:hover {
+    color: #20C997;
+  }
+  .header-social-media ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  @media (max-width: 425px) {
+    .header-social-media ul {
+      display: none;
+    }
+  }
+  .header-social-media ul li {
+    margin: 0 1rem;
+  }
+  .header-social-media ul li a:hover {
+    color: #FFF;
+  }
+  
+  .gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1170px;
+    padding: 1.5rem 0;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+  }
+  @media (max-width: 425px) {
+    .gallery {
+      flex-direction: column;
+    }
+  }
+  .gallery-card {
+    width: 31%;
+    height: 400px;
+    margin-bottom: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFF;
+  }
+  @media (max-width: 425px) {
+    .gallery-card {
+      width: 90%;
+      margin-bottom: 6%;
+    }
+  }
+  .gallery-card-title {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+  .gallery-card-btn {
+    padding: 0.6rem 2rem;
+    border: 2px solid #FFF;
+    color: #FFF;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .gallery-card-btn:hover {
+    background-color: #FFF;
+    color: #000;
+  }
+  .gallery #card-1 {
+    background-image: url("../img/pf1.jpeg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.6s;
+  }
+  .gallery #card-1:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pf1.jpeg");
+  }
+  .gallery #card-2 {
+    background-image: url("../img/pf2.jpeg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.6s;
+  }
+  .gallery #card-2:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pf2.jpeg");
+  }
+  .gallery #card-3 {
+    background-image: url("../img/pf3.jpeg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.6s;
+  }
+  .gallery #card-3:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pf3.jpeg");
+  }
+  .gallery #card-4 {
+    background-image: url("../img/pf4.jpeg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.6s;
+  }
+  .gallery #card-4:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pf4.jpeg");
+  }
+  .gallery #card-5 {
+    background-image: url("../img/pf5.jpeg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.6s;
+  }
+  .gallery #card-5:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pf5.jpeg");
+  }
+  .gallery #card-6 {
+    background-image: url("../img/pf6.jpeg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.6s;
+  }
+  .gallery #card-6:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pf6.jpeg");
+  }
+  .gallery #card-7 {
+    background-image: url("../img/pf7.jpeg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.6s;
+  }
+  .gallery #card-7:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pf7.jpeg");
+  }
+  .gallery #card-8 {
+    background-image: url("../img/pf8.jpeg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.6s;
+  }
+  .gallery #card-8:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pf8.jpeg");
+  }
+  .gallery #card-9 {
+    background-image: url("../img/pf9.jpeg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: 0.6s;
+  }
+  .gallery #card-9:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pf9.jpeg");
+  }
+  
+  footer {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  footer span {
+    font-weight: bold;
+    color: #20C997;
+  }
+  
+  .main {
+    text-align: center;
+  }
+  .foto1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .text1 {
+    margin-top: 5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+  
+  /*# sourceMappingURL=styles.css.map */
+  
